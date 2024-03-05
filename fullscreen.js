@@ -1,11 +1,12 @@
-export var elem = document.querySelector('.container');
-
+export var container = document.querySelector('.container');
+export let fullScreenMode = false;
 export function enterFullscreen(){
         if(!document.fullscreenElement){
-              
-                elem.requestFullscreen()
+                fullScreenMode=true;
+                container.requestFullscreen();
         }else{
                 if(document.exitFullscreen){
+                        fullScreenMode=false;
                         document.exitFullscreen();
                 }
                 

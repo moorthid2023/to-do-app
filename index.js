@@ -10,8 +10,15 @@ task_content.focus();
 add_button.addEventListener('click',insertContent);
 const fullScreenButton = document.querySelector('.fullScreenButton');
 fullScreenButton.addEventListener('click',()=>{
+      if(fullScreen.fullScreenMode){
+        fullScreenButton.innerHTML="enterFullScreen";
+      }
       fullScreen.enterFullscreen();
+      if(fullScreen.fullScreenMode){
         fullScreenButton.innerHTML="exitFullScreen"
+      };
+     
+
 });
 task_content.addEventListener('keydown',(e)=>{
   if(e.code === 'Enter'){
