@@ -16,3 +16,4 @@ Feel free to open an issue or submit a pull request if you have any suggestions 
 ## Contact
 
 If you have any questions or feedback, you can reach me at moorthitechno@gmail.com .
+![App preview](app_preview.jpg)
